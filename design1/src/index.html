@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <script src="./main.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ====Header==== -->
+    <header>
+      <!-- container -->
+      <div class="container px-4 mx-auto">
+        <nav class="flex justify-between items-center py-5">
+          <!-- logo -->
+          <div class="w-32 h-auto md:w-full z-20">
+            <img src="./img/logo.png" alt="logo" />
+          </div>
+          <!-- links -->
+          <ul
+            id="menu"
+            class="invisible fixed inset-0 flex flex-col justify-center items-center bg-gray-600 text-white opacity-90 transition-all ease-linear duration-300 z-20 md:bg-transparent md:flex-row md:justify-between md:static md:text-black md:visible"
+          >
+            <li>
+              <a href="#" class="nav__link">Home </a>
+            </li>
+            <li>
+              <a href="#" class="nav__link">Product </a>
+            </li>
+            <li>
+              <a href="#" class="nav__link">Faq </a>
+            </li>
+            <li>
+              <a href="#" class="nav__link">Contact</a>
+            </li>
+          </ul>
+          <!-- Menu toggle -->
+          <button id="toggle-menu" class="z-20 md:hidden cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <!-- ====Banner==== -->
+    <section>
+      <!-- background div -->
+      <div
+        class="w-full py-40 bg-no-repeat bg-cover relative h-custom flex justify-center items-center"
+        style="background-image: url(./img/banner.png)"
+      >
+        <!-- content div -->
+        <div
+          class="flex flex-col item-center justify-start gap-4 w-full max-w-[940px]"
+        >
+          <h4 class="text-2xl text-center text-white">Food app</h4>
+          <h1 class="text-6xl text-white font-bold text-center">
+            Why stay hungry when you can order from Bella Onojie
+          </h1>
+          <p class="text-2xl text-white text-center">
+            Download the bella onoje’s food app now on
+          </p>
+          <div class="flex gap-5 justify-center">
+            <button
+              class="px-8 py-3 flex justify-center items-center rounded-full bg-red-500 text-white text-xl transition-all ease-in duration-300 border border-solid border-transparent hover:border-white hover:bg-transparent sm:text-2xl"
+            >
+              Playstore
+            </button>
+            <button
+              class="px-8 py-3 flex justify-center items-center rounded-full bg-transparent border border-solid border-white text-white text-xl transition-all ease-in duration-300 hover:border-transparent hover:bg-red-500 sm:text-2xl"
+            >
+              App store
+            </button>
+          </div>
+        </div>
+        <!-- Buttons -->
+      </div>
+    </section>
+    <!-- ====App image==== -->
+    <section>
+      <div class="relative h-[560px] flex justify-center items-center">
+        <img
+          src="./img/app-img.png"
+          alt="phone app screen"
+          class="h-[600px] w-auto md:h-[800px] md:absolute md:top-[-250px] -translate-x-4"
+        />
+      </div>
+    </section>
+    <!-- ==== how the app work ==== -->
+    <section>
+      <div class="divider"></div>
+      <div
+        class="container px-4 mx-auto flex flex-col items-center justify-start gap-4"
+      >
+        <h2 class="hidden">How the app work</h2>
+        <!-- step 1 -->
+        <div class="step-space md:flex md:flex-row-reverse md:gap-16">
+          <div class="step-space w-full max-w-[560px] md:justify-center">
+            <div class="flex justify-center">
+              <a href="#" class="step-link">Create an account</a>
+            </div>
+            <h3 class="step-title">
+              Create/login to an existing account to get started
+            </h3>
+            <p class="step-content">
+              An account is created with your email and a desired password
+            </p>
+          </div>
+          <div class="flex justify-center">
+            <img src="./img/app-1.png" alt="" />
+          </div>
+        </div>
+        <!-- step 2 -->
+        <div class="step-space md:flex md:flex-row md:gap-16">
+          <div class="step-space w-full max-w-[560px] md:justify-center">
+            <div class="flex justify-center">
+              <a href="#" class="step-link">Explore varieties</a>
+            </div>
+            <h3 class="step-title">
+              Shop for your favorites meal as e dey hot.
+            </h3>
+            <p class="step-content">
+              Shop for your favorite meals or drinks and enjoy while doing it.
+            </p>
+          </div>
+          <div class="flex justify-center">
+            <img src="./img/app-2.png" alt="" />
+          </div>
+        </div>
+        <!-- step 3 -->
+        <div class="step-space md:flex md:flex-row-reverse md:gap-16">
+          <div class="step-space w-full max-w-[560px] md:justify-center">
+            <div class="flex justify-center">
+              <a href="#" class="step-link">Checkout</a>
+            </div>
+            <h3 class="step-title">
+              When you done check out and get it delivered.
+            </h3>
+            <p class="step-content">
+              When you done check out and get it delivered with ease.
+            </p>
+          </div>
+          <div class="flex justify-center">
+            <img src="./img/app-3.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====Banner==== -->
+    <section>
+      <!-- background -->
+      <div
+        style="
+          background: url(./img/download.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+        "
+        class="flex justify-center items-center h-[516px] w-auto mt-20"
+      >
+        <!-- content -->
+        <div
+          class="flex flex-col justify-start items-center gap-4 w-full max-w-[940px]"
+        >
+          <h1 class="text-4xl font-bold text-white">Download the app now</h1>
+          <p class="text-2xl text-white font-semibold">
+            Available on your favorite store. Start your premium experience now
+          </p>
+          <div class="flex gap-5 justify-center">
+            <button
+              class="px-8 py-3 flex justify-center items-center rounded-lg bg-red-500 text-white text-xl transition-all ease-in duration-300 border border-solid border-transparent hover:border-white hover:bg-transparent sm:text-2xl"
+            >
+              Playstore
+            </button>
+            <button
+              class="px-8 py-3 flex justify-center items-center rounded-lg bg-transparent border border-solid border-white text-white text-xl transition-all ease-in duration-300 hover:border-transparent hover:bg-red-500 sm:text-2xl"
+            >
+              App store
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==== footer ==== -->
+    <footer>
+      <div
+        class="container mx-auto w-full max-w-[1200px] flex flex-col gap-6 items-center my-10 md:flex-row md:justify-between"
+      >
+        <!-- logo -->
+        <div>
+          <img src="./img/logo.png" alt="logo" />
+        </div>
+        <!-- contact -->
+        <div class="flex flex-col gap-6">
+          <!-- phone -->
+          <a href="tel:0791234567" class="flex gap-4 justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6 text-red-500"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <p>0791234567</p>
+          </a>
+          <!-- email -->
+          <a
+            href="mailto:trungnguyenhuynhminh46@gmail.com"
+            class="flex gap-4 justify-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6 text-red-500"
+            >
+              <path
+                d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
+              />
+              <path
+                d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
+              />
+            </svg>
+            <p>trungnguyenhuynhminh46@gmail.com</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Copy right -->
+    <div class="flex justify-center items-center p-6">
+      <p>&copy; Copyright by Bella Onojie</p>
+    </div>
+  </body>
+</html>

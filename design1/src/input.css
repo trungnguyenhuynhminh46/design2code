@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav__link {
+  @apply p-4 transition-all duration-300 ease-in hover:text-red-700 block;
+}
+
+.divider {
+  @apply w-full max-w-[884px] h-[2px] bg-gray-400 opacity-20 mx-auto mb-10;
+}
+
+.step-space {
+  @apply flex flex-col gap-6;
+}
+
+.step-link {
+  @apply text-center text-[#FA4A0C] text-2xl font-bold;
+}
+
+.step-title {
+  @apply text-4xl text-black font-bold text-center;
+}
+
+.step-content {
+  @apply text-[#737373] text-center text-2xl;
+}
