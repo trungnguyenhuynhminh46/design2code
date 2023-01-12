@@ -432,13 +432,13 @@ body {
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 
-*::-webkit-scrollbar {
+div::-webkit-scrollbar {
   display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 
-* {
+div {
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
@@ -671,8 +671,8 @@ body {
   bottom: 0px;
 }
 
-.bottom-\[-600px\]{
-  bottom: -600px;
+.bottom-\[-530px\]{
+  bottom: -530px;
 }
 
 .left-1\/2{
@@ -687,24 +687,8 @@ body {
   left: 1.25rem;
 }
 
-.top-\[25px\]{
-  top: 25px;
-}
-
-.right-\[30px\]{
-  right: 30px;
-}
-
-.bottom-\[-500px\]{
-  bottom: -500px;
-}
-
-.bottom-\[-550px\]{
-  bottom: -550px;
-}
-
-.bottom-\[-530px\]{
-  bottom: -530px;
+.top-\[160px\]{
+  top: 160px;
 }
 
 .z-\[-1\]{
@@ -757,14 +741,6 @@ body {
   margin-bottom: 2rem;
 }
 
-.mt-\[100px\]{
-  margin-top: 100px;
-}
-
-.mb-\[228px\]{
-  margin-bottom: 228px;
-}
-
 .mt-6{
   margin-top: 1.5rem;
 }
@@ -785,8 +761,8 @@ body {
   margin-bottom: 3rem;
 }
 
-.mt-\[200px\]{
-  margin-top: 200px;
+.mt-\[100px\]{
+  margin-top: 100px;
 }
 
 .mb-\[52px\]{
@@ -1024,6 +1000,10 @@ body {
   border-style: solid;
 }
 
+.border-none{
+  border-style: none;
+}
+
 .border-\[\#DADADA\]{
   --tw-border-opacity: 1;
   border-color: rgb(218 218 218 / var(--tw-border-opacity));
@@ -1139,8 +1119,8 @@ body {
   padding-bottom: 24px;
 }
 
-.pt-\[170px\]{
-  padding-top: 170px;
+.pt-\[100px\]{
+  padding-top: 100px;
 }
 
 .pb-\[160px\]{
@@ -1153,10 +1133,6 @@ body {
 
 .pt-\[64px\]{
   padding-top: 64px;
-}
-
-.pt-\[100px\]{
-  padding-top: 100px;
 }
 
 .text-center{
@@ -1392,6 +1368,16 @@ body {
   border-color: rgb(49 53 59 / var(--tw-border-opacity));
 }
 
+@media (min-width: 640px){
+  .sm\:top-\[25px\]{
+    top: 25px;
+  }
+
+  .sm\:right-\[30px\]{
+    right: 30px;
+  }
+}
+
 @media (min-width: 768px){
   .md\:static{
     position: static;
@@ -1413,26 +1399,13 @@ body {
     left: auto;
   }
 
-  .md\:my-\[228px\]{
-    margin-top: 228px;
-    margin-bottom: 228px;
-  }
-
   .md\:my-9{
     margin-top: 2.25rem;
     margin-bottom: 2.25rem;
   }
 
-  .md\:mt-\[220px\]{
-    margin-top: 220px;
-  }
-
   .md\:mt-0{
     margin-top: 0px;
-  }
-
-  .md\:mb-\[100px\]{
-    margin-bottom: 100px;
   }
 
   .md\:flex{
@@ -1499,12 +1472,12 @@ body {
     margin-top: 1.25rem;
   }
 
-  .lg\:mb-\[100px\]{
-    margin-bottom: 100px;
-  }
-
   .lg\:mt-\[220px\]{
     margin-top: 220px;
+  }
+
+  .lg\:mb-\[100px\]{
+    margin-bottom: 100px;
   }
 
   .lg\:mt-\[200px\]{
