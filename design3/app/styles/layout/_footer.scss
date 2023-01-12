@@ -1,0 +1,187 @@
+footer{
+    background: #f8f8f8;
+    padding-top: 7.6rem;
+    padding-bottom: 7rem;
+    .container{
+        @include flex(space-between, stretch, wrap, row);
+    }
+    .section1{
+        width: 40%;
+        &__header{
+            font-family: $primary-font;
+            font-size: 4.6rem;
+            color: $btn-grey-color;
+            font-weight: 800;
+        }
+        &__content{
+            padding: 3.8rem 0;
+
+            font-family: $secondary-font;
+            font-size: 1.5rem;
+            color: $content-gray-color;
+            line-height: 1.4;
+        }
+        &__followers{
+            padding-bottom: 1.6rem;
+            font-family: $primary-font;
+            font-size: 1.4rem;
+
+            border-bottom: 1px solid #e5e5e5;
+            .num{
+                font-size: 18px;
+                font-weight: 800;
+            }
+        }
+        .socials{
+            @include flex(flex-start, center);
+            padding-top: 1.6rem;
+            padding-bottom: 3.6rem;
+            .text{
+                margin-right: 2.2rem;
+
+                font-family: $secondary-font;
+                color: $content-gray-color;
+                font-style: italic;
+                font-size: 1.5rem;
+                font-weight: 300;
+            }
+            &__list{
+                @include flex(flex-start);
+            }
+            &__item{
+                color: $third-color;
+                display: block;
+                &:not(:last-child){
+                    margin-right: 1.6rem;
+                }
+            }
+        }
+        .form{
+            height: 4rem;
+            @include flex(flex-start, stretch);
+            &__input{
+                width: 23rem;
+                height: 100%;
+                padding: 12px;
+
+                &::placeholder{
+                    font-family: $secondary-font;
+                    font-size: 1.5rem;
+                    font-style: italic;
+                    font-weight: 300;
+                    color: $btn-grey-color;
+                }
+
+                border: 1px solid #e7e7e7;
+                border-right: none;
+                outline: none;
+            }
+            &__button{
+                cursor: pointer;
+                height: 100%;
+                padding: 1.2rem 3.6rem;
+
+                border: none;
+                outline: none;
+
+                background: $third-color;
+                color: white;
+
+                font-size: $primary-font;
+                font-size: 1.4rem;
+                font-weight: 600;
+            }
+        }
+    }
+    .section2{
+        width: calc(30% - 2.8rem);
+        &__title{
+            font-family: $primary-font;
+            font-weight: 600;
+            font-size: 1.4rem;
+            color: #333333;
+            text-transform: uppercase;
+        }
+        &-blog{
+            &__list{
+                margin-top: 3.6rem;
+            }
+            &__item{
+                @include flex(flex-start, center);
+                &:not(:last-child){
+                    margin-bottom: 3rem;
+                }
+            }
+            &__thumb{
+                margin-right: 2rem;
+            }
+            &__title{
+                font-family: $primary-font;
+                font-weight: 600;
+                font-size: 1.2rem;
+                color: #333333;
+                text-transform: uppercase;
+                line-height: 1.4;
+            }
+            &__date{
+                padding: 1rem 0;
+                font-family: $secondary-font;
+                color: $content-gray-color;
+                font-weight: 300;
+                font-style: italic;
+            }
+        }
+    }
+    .section3{
+        width: calc(30% - 2.8rem);
+        &__title{
+            font-family: $primary-font;
+            font-weight: 600;
+            font-size: 1.4rem;
+            color: #333333;
+            text-transform: uppercase;
+        }
+        &__list{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 2px;
+
+            height: 27rem;
+            width: 27rem;
+            margin-top: 3.6rem;
+        }
+        &__item{
+            height: 9rem;
+            width: 9rem;
+            object-fit: cover;
+        }
+        &__more-info{
+            cursor: pointer;
+            padding: 1.8rem 0;
+            font-family: $secondary-font;
+            font-weight: 300;
+            font-style: italic;
+            color: #333333;
+        }
+    }
+    @media screen and(max-width: 1023px) {
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+        .section{
+            width: 100%;
+            &:not(:last-child){
+                margin-bottom: 2.5rem;
+            }
+        }
+        .section2{
+            &-blog{
+                &__item{
+                    &:not(:last-child){
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

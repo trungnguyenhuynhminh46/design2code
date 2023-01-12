@@ -1,0 +1,57 @@
+.award{
+    background: $third-color;
+    &__list{
+        @include flex();
+    }
+    &__item{
+        width: 25%;
+        padding: 8.5rem 3rem;
+
+        color: $content-white-color;
+        text-align: center;
+
+        border-right: 1px solid rgba($color: #ffff, $alpha: 0.2);
+        &:first-child{
+            border-left: 1px solid rgba($color: #ffff, $alpha: 0.2);
+        }
+    }
+    &__number{
+        font-family: $primary-font;
+        font-weight: bold;
+        font-size: 7.2rem;
+
+        margin-bottom: 2rem;
+    }
+    &__category{
+        font-family: $primary-font;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+    @media screen and(max-width: 1279px) {
+        &__item{
+            padding: 4.5rem 3rem;
+        }
+    }
+    @media screen and(max-width: 1023px) {
+        &__number{
+            font-size: 4.2rem;
+        }
+        &__category{
+            font-size: 1rem;
+        }
+    }
+    @media screen and(max-width: 687px) {
+        background: transparent;
+        &__list{
+            @include flex(flex-start, center, nowrap, column);
+        }
+        &__item{
+            padding: 2.5rem 1rem;
+            width: 100%;
+            border: none;
+            margin-bottom: 1.6rem;
+            background: $third-color;
+        }
+    }
+
+}

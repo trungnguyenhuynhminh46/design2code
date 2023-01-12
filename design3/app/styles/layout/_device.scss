@@ -1,0 +1,27 @@
+.device{
+    position: relative;
+    min-height: 84.8rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.6)),
+    url('../images/img-device-bg.png')
+    no-repeat center center / cover;
+    &__img{
+        @include absoluteCenter('left');
+        bottom: 0;
+        transform: translate(-50%, calc(14% - 3px));
+    }
+    @media screen and (max-width: 767px) {
+        min-height: 65rem;
+        &__img{
+            width: 80%;
+            transform: translate(-50%, calc(14% - 2px));
+        }
+    }
+    @media screen and (max-width: 767px) {
+        min-height: 40rem;
+        &__img{
+            width: 60%;
+            transform: translate(-50%, calc(14% - 1px));
+        }
+    }
+}

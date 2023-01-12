@@ -1,0 +1,103 @@
+mixin blockHeader(sub_title, main_title, content)
+	.block-header
+		.block-header__sub-title= sub_title
+		.block-header__main-title= main_title
+		if content
+			.block-header__content=content
+mixin speachItem(img_path= "./images/img-quote.png", content= "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”", author= "Jon Doe", icon= "true")
+	.speech__item
+		if icon == "true"
+			.speech__icon
+				img(src= img_path, alt="")
+		else
+			.speech__image
+				img(src= img_path, alt="")
+		.speech__main
+			.speech__content= content
+			.speech__author= author
+mixin whoweareItem(img_path, name, job, facebook="#", twitter="#", pinterest="#", instagram="#")
+	.whoweare__item
+		.whoweare__main 
+			img(src= img_path, alt="Ảnh thành viên")
+			.whoweare__content
+				ul.whoweare-social
+					li.whoweare-social__item.facebook
+						a(href= facebook).whoweare-social__link
+							i(class="fa-brands fa-facebook-f")
+					li.whoweare-social__item.twitter
+						a(href= twitter).whoweare-social__link
+							i(class="fa-brands fa-twitter")
+					li.whoweare-social__item.pinterest
+						a(href= pinterest).whoweare-social__link
+							i(class="fa-brands fa-pinterest-p")
+					li.whoweare-social__item.instagram
+						a(href= instagram).whoweare-social__link
+							i(class="fa-brands fa-instagram")
+		.whoweare-info
+			h1.whoweare-info__name= name
+			h2.whoweare-info__job= job
+mixin aboutItem(img_path="./images/img-about1.png", icon_class="fa-solid fa-people-group", name="Super team")
+	.about__item
+		img(src= img_path, alt="Hình ảnh").about__image
+		.about__content
+			i(class= icon_class)
+			span= name
+mixin workItem(image_path= "./images/img-work1.png", icon_path= "./images/img-work-icon.png", header="Creative header", text= "Lorem ipsum dolor sit amet consectetur.")
+	.work-image__item
+		img(src= image_path, alt="")
+		.work-image__content
+			img(src= icon_path, alt="").work-image__icon
+			.work-image__header= header
+			.work-image__text= text
+mixin peoplesayComment(img_path="./images/img-people1.png", name="Name", job="Job", text="Text")
+	.peoplesay__comment
+		img(src= img_path, alt="")
+		.peoplesay__content
+			.peoplesay__name= name
+			.peoplesay__job= job
+			.peoplesay__text= text
+mixin blogInteractGroup(icon_class="fa-solid fa-eye", num=1)
+	.group
+		i(class= icon_class)
+		span.num= num
+mixin blogItem(img_path="./images/img-blog1.png", title="Lorem ipsum dolor sit amet", text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium soluta saepe, ipsa deserunt quo neque.", day=15, month='jan')
+	.blog__item
+		.blog__thumb
+			img(src= img_path, alt="")
+			.blog__date
+				span.day= day
+				span.month= month
+		.blog__content
+			.blog__title= title
+			.blog__text= text
+		.blog__interact
+			if block
+				block
+mixin socialItem(link="#link", icon_class="fa-brands fa-facebook-f")
+	a.socials__item(href= link)
+		i(class= icon_class)
+mixin footerSection1(header="Header", content="content", num=15000)
+	.section.section1
+		h1.section1__header #{header}
+		.section1__content #{content}
+		.section1__followers
+			if num < 1000
+				span.num #{num}
+				span followers
+			else
+				span.num #{num/1000}k 
+				span followers
+		.socials
+			span.text Follow Us:
+			.socials__list
+				if block
+					block
+		.form
+			input(type="text", name="", placeholder="Your Email...").form__input
+			button.form__button Subscribe
+mixin footerBlogItem(img_path= "./images/img-blogs1.png", title= "Lorem, ipsum dolor sit amet consectetur.", date= "Jan 9, 2016", blog_link="#")
+	.section2-blog__item
+		img(src= img_path, alt="").section2-blog__thumb
+		.section2-blog__content
+			a(href= blog_link).section2-blog__title= title
+			.section2-blog__date= date

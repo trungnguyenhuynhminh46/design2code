@@ -1,0 +1,151 @@
+.speech{
+    background-color: #f8f8f8;
+    &.affirmation{
+        background-color: #ffffff;
+    }
+    .container{
+        position: relative;
+    }
+    &__list{
+        padding: 11rem 7rem;
+    }
+    &__arrow-left, &__arrow-right{
+        cursor: pointer;
+        @include absoluteCenter('top');
+        padding: 2.4rem;
+        font-size: 2rem;
+        color: $btn-grey-color;
+        transition: .25s all linear;
+    }
+    &__item{
+        @include flex(flex-start, stretch);
+        &.slick-slide{
+            display: flex;
+        }
+    }
+    &__image{
+        flex-shrink: 0;
+        width: 21rem;
+        height: 21rem;
+        margin-right: 2.6rem;
+        img{
+            height: 21rem;
+            width: 21rem;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+    &__icon{
+        padding: 4.2rem;
+        margin-right: 6rem;
+        border: 3px solid $third-color;
+        img{
+            max-width: 64px;
+            height: auto;
+        }
+    }
+    &__main{
+        
+    }
+    &__content{
+        margin-bottom: 1.2rem;
+
+        font-family: $secondary-font;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 2.4rem;
+        line-height: 1.4;
+    }
+    &__author{
+        position: relative;
+
+        padding-left: 7rem;
+
+        font-family: $third-font;
+        font-size: 2.4rem;
+        line-height: 1.4;
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transform: translateY(-1rem);
+
+            height: 3px;
+            width: 6rem;
+            background: $primary-color;
+
+
+        }
+    }
+    // Slick.js
+    .slick-arrow{
+        cursor: pointer;
+        @include absoluteCenter('top');
+        padding: 2.4rem;
+
+        background: transparent;
+        color: $btn-grey-color;
+        border: none;
+        outline: none;
+
+        font-size: 2rem;
+        transition: .25s all linear;
+    }
+    .slick-prev{
+        left: 0;
+    }
+    .slick-next{
+        right: 0;
+    }
+    @media screen and(max-width: 1023px) {
+        &__list{
+            padding: 8rem 7rem;
+        }
+        &__item{
+            @include flex(flex-start, flex-start, nowrap, column);
+        }
+        &__image{
+            width: 16rem;
+            height: 16rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2.5rem;
+            img{
+                height: 16rem;
+                width: 16rem;
+            }
+        }
+        &__icon{
+            padding: 3rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2.5rem;
+            border: 3px solid $third-color;
+            img{
+                max-width: 56px;
+                height: auto;
+            }
+        }
+        &__content, &__author{
+            font-size: 1.6rem;
+        }
+    }
+    @media screen and(max-width: 687px) {
+        &__list{
+            padding: 5rem 5rem;
+            @include flex(flex-start, stretch);
+        }
+        &__arrow-left, &__arrow-right{
+            padding: 1.6rem;
+        }
+        &__image{
+            width: 12rem;
+            height: 12rem;
+            img{
+                height: 12rem;
+                width: 12rem;
+            }
+        }
+    }
+}

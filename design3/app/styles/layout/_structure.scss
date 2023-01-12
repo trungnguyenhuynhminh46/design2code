@@ -1,0 +1,63 @@
+.wrapper{
+  max-width: $wrapper;
+  margin: 0 auto;
+}
+
+.container{
+  max-width: $container + 15px + 15px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.block-header{
+  padding-top: 9rem;
+  text-align: center;
+  &__sub-title{
+    margin-bottom: 1.6rem;
+
+    font-family: $third-font;
+    font-size: 2.4rem;
+  }
+  &__main-title{
+    position: relative;
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+
+    font-family: $primary-font;
+    font-weight: bold;
+    font-size: 3rem;
+    text-transform: uppercase;
+    &:after{
+      content: "";
+      @include absoluteCenter(left);
+      bottom: 0;
+
+      height: 0.3rem;
+      width: 6rem;
+
+      background-color: $primary-color;
+    }
+  }
+  &__content{
+    max-width: 96rem;
+    padding-bottom: 10rem;
+    margin: 0 auto;
+
+    font-family: $secondary-font;
+    font-size: 1.5rem;
+    color: $content-gray-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 5rem;
+    &__main-title{
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+    &__content{
+      padding-bottom: 5rem;
+    }
+
+  }
+}

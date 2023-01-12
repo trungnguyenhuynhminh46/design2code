@@ -1,0 +1,114 @@
+.blog{
+    padding-top: 2rem;
+    &__list{
+        @include flex(space-around, stretch, wrap);
+        margin-bottom: 9rem;
+    }
+    &__item{
+        width: calc(33.33% - 21px);
+    }
+    &__thumb{
+        position: relative;
+        width: 100%;
+        img{
+            max-width: 100%;
+            height: 24rem;
+            object-fit: cover;
+        }
+        .blog__date{
+            position: absolute;
+            left: -1rem;
+            bottom: 1rem;
+
+            @include flex(flex-start, center, nowrap, column);
+            width: 6rem;
+            height: 7rem;
+            padding: 1.5rem 1.6rem;
+            background: $third-color;
+
+            .day{
+                font-family: $primary-font;
+                font-size: 3rem;
+                color: $content-white-color;
+                font-weight: 800;
+            }
+            .month{
+                font-family: $secondary-font;
+                font-size: 1.5rem;
+                color: $content-white-color;
+                font-weight: 300;
+                font-style: italic;
+                text-transform: capitalize;
+            }
+        }
+    }
+    &__title{
+        padding: 1.8rem 0;
+
+        font-family: $primary-font;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #333333;
+
+    }
+    &__text{
+        padding-bottom: 1.8rem;
+
+        border-bottom: 1px solid #e5e5e5;
+
+        font-family: $secondary-font;
+        font-size: 1.5rem;
+        line-height: 1.4;
+        color: $content-gray-color;
+    }
+    &__interact{
+        padding: 1.8rem 0;
+        @include flex(flex-start, center);
+        .group{
+            margin-right: 1.8rem;
+        }
+        i{
+            margin-right: 0.6rem;
+            color: $third-color;
+        }
+        span.num{
+            font-family: $secondary-font;
+            font-size: 1.5rem;
+            color: $content-gray-color;
+            font-weight: 300;
+            font-style: italic;
+        }
+    }
+    @media screen and(max-width: 767px) {
+        &__title{
+            font-size: 1.2rem;
+    
+        }
+        &__text{
+            font-size: 1.2rem;
+        }
+    }
+    @media screen and(max-width: 687px) {
+        &__list{
+            @include flex(flex-start, stretch);
+            overflow-x: auto;
+            //Hide Scrollbar
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            // Scrollsnap
+            scroll-snap-type: x mandatory;
+        }
+        &__item{
+            flex-shrink: 0;
+            width: 80%;
+            margin-right: 2.5rem;
+            // Scrollsnap
+            scroll-snap-align: start;
+        }
+    }
+
+}
