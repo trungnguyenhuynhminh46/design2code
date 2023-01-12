@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  * {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+@layer components {
+  .layout-container {
+    @apply w-full max-w-[1200px] mx-auto px-4;
+  }
+
+  .menu-item {
+    @apply inline-block p-3 md:p-5;
+  }
+
+  .menu-link {
+    @apply font-bold text-[20px] transition-all duration-300 text-white hover:text-primary md:text-[13px] border-b border-solid border-transparent md:text-black md:hover:text-black md:hover:border-b-black;
+  }
+  .badge {
+    @apply p-2 border border-solid border-white text-white text-[12px] leading-[15px] rounded-[5px];
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+
+@layer utilities {
+  .custom-shadow {
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03),
+      0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778),
+      0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222),
+      0px 20px 13px rgba(0, 0, 0, 0.015),
+      0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778),
+      0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
+  }
+  .card1-shadow {
+    box-shadow: 0px 100px 80px rgba(150, 114, 255, 0.07),
+      0px 64.8148px 46.8519px rgba(150, 114, 255, 0.0531481),
+      0px 38.5185px 25.4815px rgba(150, 114, 255, 0.0425185),
+      0px 20px 13px rgba(150, 114, 255, 0.035),
+      0px 8.14815px 6.51852px rgba(150, 114, 255, 0.0274815),
+      0px 1.85185px 3.14815px rgba(150, 114, 255, 0.0168519);
+  }
+  .card2-shadow {
+    box-shadow: 0px 100px 80px rgba(77, 223, 253, 0.07),
+      0px 64.8148px 46.8519px rgba(77, 223, 253, 0.0531481),
+      0px 38.5185px 25.4815px rgba(77, 223, 253, 0.0425185),
+      0px 20px 13px rgba(77, 223, 253, 0.035),
+      0px 8.14815px 6.51852px rgba(77, 223, 253, 0.0274815),
+      0px 1.85185px 3.14815px rgba(77, 223, 253, 0.0168519);
+  }
+  .card3-shadow {
+    box-shadow: 0px 100px 80px rgba(242, 184, 236, 0.07),
+      0px 64.8148px 46.8519px rgba(242, 184, 236, 0.0531481),
+      0px 38.5185px 25.4815px rgba(242, 184, 236, 0.0425185),
+      0px 20px 13px rgba(242, 184, 236, 0.035),
+      0px 8.14815px 6.51852px rgba(242, 184, 236, 0.0274815),
+      0px 1.85185px 3.14815px rgba(242, 184, 236, 0.0168519);
+  }
+  .button-shadow {
+    box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.07),
+      0px 64.8148px 46.8519px rgba(248, 90, 71, 0.0531481),
+      0px 38.5185px 25.4815px rgba(248, 90, 71, 0.0425185),
+      0px 20px 13px rgba(248, 90, 71, 0.035),
+      0px 8.14815px 6.51852px rgba(248, 90, 71, 0.0274815),
+      0px 1.85185px 3.14815px rgba(248, 90, 71, 0.0168519);
+  }
+  .tab-active {
+    @apply text-secondary border-b border-secondary;
+  }
+}

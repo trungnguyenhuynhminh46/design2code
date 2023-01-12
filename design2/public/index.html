@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+
+    <title>Design 2</title>
+  </head>
+  <body>
+    <div class="relative">
+      <!-- ==== background ====  -->
+      <div
+        class="absolute right-0 top-0 bottom-0 w-[35%] bg-[#BDCCFF] z-[-1]"
+      ></div>
+      <!-- ==== Header ==== -->
+      <header>
+        <div class="flex items-center justify-between p-4 layout-container">
+          <!-- logo -->
+          <a href="#" class="text-[23px] font-extrabold z-30">
+            <span>SmartSpace</span>
+          </a>
+          <!-- menu -->
+          <ul
+            class="fixed inset-0 z-20 flex flex-col items-center justify-center transition-all duration-300 ease-linear bg-gray-500 opacity-90 md:static md:flex-row md:bg-transparent translate-x-[100%] md:translate-x-0"
+            id="menu"
+          >
+            <li class="menu-item">
+              <a href="#" class="menu-link">Home</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">About</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Service</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Portfolio</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Blog</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Contact</a>
+            </li>
+          </ul>
+          <!-- menu toggle -->
+          <button class="z-30 md:hidden" id="toggle-menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </header>
+      <!-- ==== Content ====  -->
+      <div
+        class="flex flex-col gap-4 layout-container lg:h-[573px] lg:flex-row lg:gap-0 mt-10 lg:mt-[100px]"
+      >
+        <!-- left -->
+        <div class="flex flex-col gap-10 basis-1/2">
+          <h2 class="text-tertitary font-bold text-[22px]">
+            RESIDENTIAL & OFFICE SPACES
+          </h2>
+          <h1 class="font-extrabold text-[54px] text-black leading-[73px]">
+            Smart Living Style for Smart People
+          </h1>
+          <p class="text-[17px] text-[#31353B]">
+            Much did had call new drew that kept. Limits expect wonder law she.
+            Now has you views woman noisy match money rooms.
+          </p>
+          <!-- search box -->
+          <div class="relative flex items-stretch custom-shadow lg:block">
+            <input
+              type="text"
+              placeholder="Enter Zipcode to search properties"
+              class="w-full border border-solid border-[#DADADA] p-[30px] outline-none"
+            />
+            <button
+              class="lg:absolute lg:right-0 lg:translate-x-[100%] lg:h-full px-10 text-[17px] font-bold text-white bg-secondary z-10"
+            >
+              Search Now!
+            </button>
+          </div>
+        </div>
+        <!-- right - image -->
+        <div class="basis-1/2">
+          <img
+            src="./img/header-image.png"
+            alt=""
+            class="w-3/4 h-auto mx-auto lg:w-full"
+          />
+        </div>
+      </div>
+      <!-- ==== Brands ==== -->
+      <div class="flex flex-col gap-5 mt-5 layout-container lg:mt-5">
+        <h4 class="text-[17px] leading-[23px]">Our Amazing Partners</h4>
+        <div
+          class="flex max-w-[768px] gap-12 overflow-x-auto snap-mandatory snap-x"
+        >
+          <img src="./img/brand1.png" alt="" class="snap-start" />
+          <img src="./img/brand2.png" alt="" class="snap-start" />
+          <img src="./img/brand3.png" alt="" class="snap-start" />
+          <img src="./img/brand4.png" alt="" class="snap-start" />
+          <img src="./img/brand5.png" alt="" class="snap-start" />
+          <img src="./img/brand6.png" alt="" class="snap-start" />
+        </div>
+      </div>
+    </div>
+    <!-- ==== how it works ==== -->
+    <section>
+      <div class="layout-container mt-[90px] lg:mt-[220px]">
+        <h1 class="text-center font-semibold text-4xl leading-[55px] mb-[54px]">
+          How it works?
+        </h1>
+        <!-- cards -->
+        <div class="flex flex-col gap-10 md:flex-row md:justify-between">
+          <!-- card1 -->
+          <div class="flex flex-col items-center gap-5 md:max-w-[260px]">
+            <!-- icon -->
+            <div
+              class="w-[90px] h-[90px] rounded-[20px] bg-[#9672FF] flex justify-center items-center text-white card1-shadow mb-8"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-7 h-7"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                />
+              </svg>
+            </div>
+            <!-- title -->
+            <h4 class="text-[22px] leading-[30px] font-semibold text-black">
+              Research Suburbs
+            </h4>
+            <!-- content -->
+            <p
+              class="font-roboto text-base leading-[26px] text-center text-[#333333]"
+            >
+              Wonder twenty hunted and put income set desire expect. Am cottage
+              calling.
+            </p>
+          </div>
+          <!-- card2 -->
+          <div class="flex flex-col items-center gap-5 md:max-w-[260px]">
+            <!-- icon -->
+            <div
+              class="w-[90px] h-[90px] rounded-[20px] bg-[#4DDFFD] flex justify-center items-center text-white card2-shadow mb-8"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-7 h-7"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                />
+              </svg>
+            </div>
+            <!-- title -->
+            <h4 class="text-[22px] leading-[30px] font-semibold text-black">
+              Research Suburbs
+            </h4>
+            <!-- content -->
+            <p
+              class="font-roboto text-base leading-[26px] text-center text-[#333333]"
+            >
+              Wonder twenty hunted and put income set desire expect. Am cottage
+              calling.
+            </p>
+          </div>
+          <!-- card3 -->
+          <div class="flex flex-col items-center gap-5 md:max-w-[260px]">
+            <!-- icon -->
+            <div
+              class="w-[90px] h-[90px] rounded-[20px] bg-[#F2B8EC] flex justify-center items-center text-white card3-shadow mb-8"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-7 h-7"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                />
+              </svg>
+            </div>
+            <!-- title -->
+            <h4 class="text-[22px] leading-[30px] font-semibold text-black">
+              Research Suburbs
+            </h4>
+            <!-- content -->
+            <p
+              class="font-roboto text-base leading-[26px] text-center text-[#333333]"
+            >
+              Wonder twenty hunted and put income set desire expect. Am cottage
+              calling.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==== estate deals ==== -->
+    <section class="my-[100px] lg:my-[228px]">
+      <!-- container -->
+      <div class="layout-container">
+        <!-- header -->
+        <div class="relative">
+          <h1 class="font-semibold text-[40px] text-black">
+            Best Real Estate Deals
+          </h1>
+          <p class="max-w-[464px] font-normal text-base leading-[24px]">
+            Colonel gravity get thought fat smiling add but. Wonder twenty
+            hunted and put income set desire expect.
+          </p>
+          <button
+            class="absolute bottom-[-530px] left-1/2 -translate-x-1/2 md:top-0 md:right-0 md:bottom-auto md:left-auto md:translate-x-0 px-10 py-6 rounded-[5px] button-shadow font-medium text-[17px] leading-[23px] text-center text-white bg-secondary"
+          >
+            View All Property
+          </button>
+        </div>
+        <!-- tabs -->
+        <div class="flex flex-wrap mt-6 md:mt-0">
+          <div class="p-2 m-2 cursor-pointer md:p-3 md:my-9 tab-active">
+            Residential Property
+          </div>
+          <div class="p-2 m-2 cursor-pointer md:p-3 md:my-9">
+            Commercial Property
+          </div>
+          <div class="p-2 m-2 cursor-pointer md:p-3 md:my-9">
+            Agriculture Property
+          </div>
+          <div class="p-2 m-2 cursor-pointer md:p-3 md:my-9">
+            Industrial Property
+          </div>
+        </div>
+        <!-- tabs content -->
+        <div class="flex gap-6 overflow-y-auto snap-mandatory snap-x">
+          <!-- estate -->
+          <div class="relative flex-shrink-0 snap-start">
+            <img src="./img/Estate01.jpg" alt="" />
+            <!-- badges -->
+            <div class="absolute flex gap-4 top-5 left-5">
+              <div class="badge">Featured</div>
+              <div class="badge">3D</div>
+            </div>
+          </div>
+          <!-- estate -->
+          <div class="relative flex-shrink-0 snap-start">
+            <img src="./img/Estate02.jpg" alt="" />
+            <!-- badges -->
+            <div class="absolute flex gap-4 top-5 left-5">
+              <div class="badge">Featured</div>
+              <div class="badge">3D</div>
+            </div>
+          </div>
+          <!-- estate -->
+          <div class="relative flex-shrink-0 snap-start">
+            <img src="./img/Estate03.jpg" alt="" />
+            <!-- badges -->
+            <div class="absolute flex gap-4 top-5 left-5">
+              <div class="badge">Featured</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==== featured ==== -->
+    <section>
+      <h1
+        class="font-semibold text-[40px] text-center text-black mb-[40px] lg:mb-[100px]"
+      >
+        Featured Listing of the Week
+      </h1>
+      <div class="p-10 layout-container bg-[#F1FFFF]">
+        <div class="flex flex-col md:flex-row md:gap-[74px]">
+          <!-- image -->
+          <div class="relative flex justify-center mb-[220px] md:basis-1/2">
+            <img src="./img/Image1.png" alt="" class="" />
+            <img
+              src="./img/Image2.png"
+              alt=""
+              class="absolute bottom-0 translate-y-[164px] max-w-[80%]"
+            />
+          </div>
+          <!-- content -->
+          <div class="flex flex-col md:basis-1/2">
+            <h1 class="font-semibold text-[31px] mb-10">
+              The and collecting for the motionless difficulty son.
+            </h1>
+            <p class="mb-12 max-w-[340px]">
+              Conveying or northward offending admitting perfectly my. Colonel
+              gravity get thought fat smiling add but difficult situations.
+            </p>
+            <!-- Attributes -->
+            <div class="flex flex-wrap">
+              <div class="mb-10 basis-1/3">
+                <p class="font-bold text-[17px]">Budget</p>
+                <p class="text-[17px]">Confidential</p>
+              </div>
+              <div class="mb-10 basis-1/3">
+                <p class="font-bold text-[17px]">Budget</p>
+                <p class="text-[17px]">Confidential</p>
+              </div>
+              <div class="mb-10 basis-1/3">
+                <p class="font-bold text-[17px]">Budget</p>
+                <p class="text-[17px]">Confidential</p>
+              </div>
+              <div class="mb-10 basis-1/3">
+                <p class="font-bold text-[17px]">Budget</p>
+                <p class="text-[17px]">Confidential</p>
+              </div>
+              <div class="mb-10 basis-1/3">
+                <p class="font-bold text-[17px]">Budget</p>
+                <p class="text-[17px]">Confidential</p>
+              </div>
+              <div class="mb-10 basis-1/3">
+                <p class="font-bold text-[17px]">Budget</p>
+                <p class="text-[17px]">Confidential</p>
+              </div>
+              <!-- button -->
+              <button
+                class="w-full p-5 text-white bg-secondary button-shadow rounded-[5px]"
+              >
+                YES! I WANT BOOK “OFFICE PACKAGE”
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==== rating ==== -->
+    <section>
+      <div class="layout-container">
+        <h1
+          class="max-w-[570px] font-semibold text-[40px] leading-[55px] mt-[100px] lg:mt-[200px] mb-[52px]"
+        >
+          Loved by businesses, and individuals across the globe.
+        </h1>
+        <div class="flex gap-8 overflow-x-auto snap-mandatory snap-x">
+          <!-- rate -->
+          <div
+            class="flex flex-col gap-12 py-12 px-8 border border-solid border-gray-200 rounded-[10px] w-[368px] flex-shrink-0 snap-start"
+          >
+            <!-- stars -->
+            <div>
+              <i class="text-yellow-300 fa-solid fa-star"></i>
+              <i class="text-yellow-300 fa-solid fa-star"></i>
+              <i class="text-yellow-300 fa-solid fa-star"></i>
+              <i class="text-yellow-300 fa-solid fa-star"></i>
+              <i class="text-yellow-300 fa-solid fa-star"></i>
+            </div>
+            <!-- content -->
+            <p class="max-w-[270px] leading-[28px]">
+              Moderate children at of outweigh it. Unsatiable it considered
+              invitation he travelling insensible. Consulted admitting oh mr up
+              as described.
+            </p>
+            <!-- user -->
+            <div class="flex gap-5">
+              <img
+                src="https://images.unsplash.com/photo-1673117921063-5dde75f25a81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=449&q=80"
+                alt=""
+                class="w-12 h-12 rounded-[50%]"
+              />
+              <div class="flex flex-col">
+                <span class="font-semibold">Jane Cooper</span>
+                <span>Los Angeles, CA</span>
+              </div>
+            </div>
+          </div>
+          <!-- rate -->
+          <div
+            class="flex flex-col gap-12 py-12 px-8 border border-solid border-gray-200 rounded-[10px] w-[368px] flex-shrink-0 snap-start"
+          >
+            <!-- stars -->
+            <div>
+              <i class="text-yellow-300 fa-solid fa-star"></i>
+              <i class="text-yellow-300 fa-solid fa-star"></i>
+              <i class="text-yellow-300 fa-solid fa-star"></i>
+              <i class="text-yellow-300 fa-solid fa-star"></i>
+              <i class="text-yellow-300 fa-solid fa-star"></i>
+            </div>
+            <!-- content -->
+            <p class="max-w-[270px] leading-[28px]">
+              Moderate children at of outweigh it. Unsatiable it considered
+              invitation he travelling insensible. Consulted admitting oh mr up
+              as described.
+            </p>
+            <!-- user -->
+            <div class="flex gap-5">
+              <img
+                src="https://images.unsplash.com/photo-1673117921063-5dde75f25a81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=449&q=80"
+                alt=""
+                class="w-12 h-12 rounded-[50%]"
+              />
+              <div class="flex flex-col">
+                <span class="font-semibold">Jane Cooper</span>
+                <span>Los Angeles, CA</span>
+              </div>
+            </div>
+          </div>
+          <!-- rate -->
+          <div
+            class="flex flex-col gap-12 py-12 px-8 border border-solid border-gray-200 rounded-[10px] w-[368px] flex-shrink-0 snap-start"
+          >
+            <!-- stars -->
+            <div>
+              <i class="text-yellow-300 fa-solid fa-star"></i>
+              <i class="text-yellow-300 fa-solid fa-star"></i>
+              <i class="text-yellow-300 fa-solid fa-star"></i>
+              <i class="text-yellow-300 fa-solid fa-star"></i>
+              <i class="text-yellow-300 fa-solid fa-star"></i>
+            </div>
+            <!-- content -->
+            <p class="max-w-[270px] leading-[28px]">
+              Moderate children at of outweigh it. Unsatiable it considered
+              invitation he travelling insensible. Consulted admitting oh mr up
+              as described.
+            </p>
+            <!-- user -->
+            <div class="flex gap-5">
+              <img
+                src="https://images.unsplash.com/photo-1673117921063-5dde75f25a81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=449&q=80"
+                alt=""
+                class="w-12 h-12 rounded-[50%]"
+              />
+              <div class="flex flex-col">
+                <span class="font-semibold">Jane Cooper</span>
+                <span>Los Angeles, CA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <section class="bg-[#FBFCFC]">
+      <!-- send info -->
+      <div
+        class="layout-container pt-[100px] lg:pt-[100px] pb-[160px] flex flex-col items-center gap-7"
+      >
+        <h1 class="font-bold text-[45px]">Get Our Newsletter</h1>
+        <h4 class="font-bold text-[23px]">To join the worldwide community</h4>
+        <!-- send email -->
+        <div
+          class="relative w-full max-w-[686px] pl-11 py-[30px] bg-white flex items-center custom-shadow"
+        >
+          <div class="flex flex-col gap-2">
+            <span class="text-[17px] font-medium text-[#31353B] opacity-20"
+              >Type your email address</span
+            >
+            <input
+              type="text"
+              value="shakir260@gmail.com"
+              class="text-[20px] font-bold"
+            />
+          </div>
+          <button
+            class="absolute top-[25px] right-[30px] flex justify-center items-center text-[18px] font-medium text-white px-[38px] py-[24px] bg-secondary button-shadow"
+          >
+            Send now
+          </button>
+        </div>
+      </div>
+      <!-- footer -->
+      <div
+        class="layout-container border-t border-t-[#DEDFE1] border-solid flex justify-between pt-[64px]"
+      >
+        <span class="text-[23px] font-extrabold">SmartSpace</span>
+        <!-- menu -->
+        <ul class="hidden gap-4 md:flex">
+          <li>
+            <a
+              href=""
+              class="font-bold text-[13px] hover:border-b transition-all duration-300 hover:border-[#31353B] hover:border-solid"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="font-bold text-[13px] hover:border-b transition-all duration-300 hover:border-[#31353B] hover:border-solid"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="font-bold text-[13px] hover:border-b transition-all duration-300 hover:border-[#31353B] hover:border-solid"
+              >Sevice</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="font-bold text-[13px] hover:border-b transition-all duration-300 hover:border-[#31353B] hover:border-solid"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="font-bold text-[13px] hover:border-b transition-all duration-300 hover:border-[#31353B] hover:border-solid"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="font-bold text-[13px] hover:border-b transition-all duration-300 hover:border-[#31353B] hover:border-solid"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- copy right -->
+      <div
+        class="flex items-center justify-center layout-container mt-[74px] mb-[36px]"
+      >
+        <span class="text-[12px] font-bold"
+          >Copyright © 2021 AR Shakir . All Rights Reseved.</span
+        >
+      </div>
+    </section>
+  </body>
+</html>

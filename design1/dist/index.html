@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="./output.css" />
     <script src="./main.js" defer></script>
     <title>Document</title>
   </head>
@@ -13,15 +13,15 @@
     <header>
       <!-- container -->
       <div class="container px-4 mx-auto">
-        <nav class="flex justify-between items-center py-5">
+        <nav class="flex items-center justify-between py-5">
           <!-- logo -->
-          <div class="w-32 h-auto md:w-full z-20">
+          <div class="z-20 w-32 h-auto md:w-full">
             <img src="./img/logo.png" alt="logo" />
           </div>
           <!-- links -->
           <ul
             id="menu"
-            class="invisible fixed inset-0 flex flex-col justify-center items-center bg-gray-600 text-white opacity-90 transition-all ease-linear duration-300 z-20 md:bg-transparent md:flex-row md:justify-between md:static md:text-black md:visible"
+            class="fixed inset-0 z-20 flex flex-col items-center justify-center text-white transition-all duration-300 ease-linear bg-gray-600 opacity-90 md:bg-transparent md:flex-row md:justify-between md:static md:text-black translate-x-[100%] md:translate-x-0"
           >
             <li>
               <a href="#" class="nav__link">Home </a>
@@ -37,7 +37,7 @@
             </li>
           </ul>
           <!-- Menu toggle -->
-          <button id="toggle-menu" class="z-20 md:hidden cursor-pointer">
+          <button id="toggle-menu" class="z-20 cursor-pointer md:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -60,7 +60,7 @@
     <section>
       <!-- background div -->
       <div
-        class="w-full py-40 bg-no-repeat bg-cover relative h-custom flex justify-center items-center"
+        class="relative flex items-center justify-center w-full py-40 bg-no-repeat bg-cover h-custom"
         style="background-image: url(./img/banner.png)"
       >
         <!-- content div -->
@@ -68,20 +68,20 @@
           class="flex flex-col item-center justify-start gap-4 w-full max-w-[940px]"
         >
           <h4 class="text-2xl text-center text-white">Food app</h4>
-          <h1 class="text-6xl text-white font-bold text-center">
+          <h1 class="text-6xl font-bold text-center text-white">
             Why stay hungry when you can order from Bella Onojie
           </h1>
-          <p class="text-2xl text-white text-center">
+          <p class="text-2xl text-center text-white">
             Download the bella onoje’s food app now on
           </p>
-          <div class="flex gap-5 justify-center">
+          <div class="flex justify-center gap-5">
             <button
-              class="px-8 py-3 flex justify-center items-center rounded-full bg-red-500 text-white text-xl transition-all ease-in duration-300 border border-solid border-transparent hover:border-white hover:bg-transparent sm:text-2xl"
+              class="flex items-center justify-center px-8 py-3 text-xl text-white transition-all duration-300 ease-in bg-red-500 border border-transparent border-solid rounded-full hover:border-white hover:bg-transparent sm:text-2xl"
             >
               Playstore
             </button>
             <button
-              class="px-8 py-3 flex justify-center items-center rounded-full bg-transparent border border-solid border-white text-white text-xl transition-all ease-in duration-300 hover:border-transparent hover:bg-red-500 sm:text-2xl"
+              class="flex items-center justify-center px-8 py-3 text-xl text-white transition-all duration-300 ease-in bg-transparent border border-white border-solid rounded-full hover:border-transparent hover:bg-red-500 sm:text-2xl"
             >
               App store
             </button>
@@ -104,7 +104,7 @@
     <section>
       <div class="divider"></div>
       <div
-        class="container px-4 mx-auto flex flex-col items-center justify-start gap-4"
+        class="container flex flex-col items-center justify-start gap-4 px-4 mx-auto"
       >
         <h2 class="hidden">How the app work</h2>
         <!-- step 1 -->
@@ -176,17 +176,17 @@
           class="flex flex-col justify-start items-center gap-4 w-full max-w-[940px]"
         >
           <h1 class="text-4xl font-bold text-white">Download the app now</h1>
-          <p class="text-2xl text-white font-semibold">
+          <p class="text-2xl font-semibold text-white">
             Available on your favorite store. Start your premium experience now
           </p>
-          <div class="flex gap-5 justify-center">
+          <div class="flex justify-center gap-5">
             <button
-              class="px-8 py-3 flex justify-center items-center rounded-lg bg-red-500 text-white text-xl transition-all ease-in duration-300 border border-solid border-transparent hover:border-white hover:bg-transparent sm:text-2xl"
+              class="flex items-center justify-center px-8 py-3 text-xl text-white transition-all duration-300 ease-in bg-red-500 border border-transparent border-solid rounded-lg hover:border-white hover:bg-transparent sm:text-2xl"
             >
               Playstore
             </button>
             <button
-              class="px-8 py-3 flex justify-center items-center rounded-lg bg-transparent border border-solid border-white text-white text-xl transition-all ease-in duration-300 hover:border-transparent hover:bg-red-500 sm:text-2xl"
+              class="flex items-center justify-center px-8 py-3 text-xl text-white transition-all duration-300 ease-in bg-transparent border border-white border-solid rounded-lg hover:border-transparent hover:bg-red-500 sm:text-2xl"
             >
               App store
             </button>
@@ -206,7 +206,7 @@
         <!-- contact -->
         <div class="flex flex-col gap-6">
           <!-- phone -->
-          <a href="tel:0791234567" class="flex gap-4 justify-center">
+          <a href="tel:0791234567" class="flex justify-center gap-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -224,7 +224,7 @@
           <!-- email -->
           <a
             href="mailto:trungnguyenhuynhminh46@gmail.com"
-            class="flex gap-4 justify-center"
+            class="flex justify-center gap-4"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -245,7 +245,7 @@
       </div>
     </footer>
     <!-- Copy right -->
-    <div class="flex justify-center items-center p-6">
+    <div class="flex items-center justify-center p-6">
       <p>&copy; Copyright by Bella Onojie</p>
     </div>
   </body>
