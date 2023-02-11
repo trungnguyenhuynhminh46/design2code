@@ -15,3 +15,5 @@
 ### [Design4](https://trungnguyenhuynhminh46.github.io/design2code.github.io/design4/)
 
 ### [Design5](https://trungnguyenhuynhminh46.github.io/design2code.github.io/design5/)
+
+### [Design6](https://trungnguyenhuynhminh46.github.io/design2code.github.io/design6/)
