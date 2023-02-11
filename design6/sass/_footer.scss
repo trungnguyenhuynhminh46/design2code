@@ -1,0 +1,132 @@
+.footer {
+  &-container {
+    color: $color-white-ea;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    .logo span {
+      color: $color-white-ea;
+    }
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+  &-column {
+    color: $color-white-ea;
+    flex-shrink: 0;
+    &:last-child {
+      max-width: 370px;
+    }
+  }
+  &-head {
+    font-size: 22px;
+    line-height: calc(32 / 22);
+    margin-bottom: 20px;
+  }
+  &-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &-link {
+    color: inherit;
+    text-transform: uppercase;
+  }
+  &-copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 40px 0;
+    border-top: 1px solid $color-gray;
+    span {
+      font-family: $font-family-dmsans;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: $color-white-ea;
+    }
+  }
+  &-socials {
+    display: flex;
+    gap: 20px;
+  }
+  &-social {
+    cursor: pointer;
+    height: 52px;
+    width: 52px;
+    border-radius: 50%;
+    background: $color-blue;
+    border: none;
+    outline: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 20px;
+      width: auto;
+    }
+  }
+}
+.newsletter {
+  &-text {
+    font-family: $font-family-dmsans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $color-white-ea;
+
+    margin-bottom: 25px;
+  }
+  &-subtext {
+    font-family: $font-family-dmsans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    color: $color-white-ea;
+
+    margin-top: 15px;
+  }
+  &-form {
+    width: 100%;
+    display: flex;
+    gap: 6px;
+    justify-content: start;
+    align-items: stretch;
+  }
+  &-input {
+    flex: 1;
+    padding: 11px 18px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+
+    font-family: $font-family-dmsans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  &-input::placeholder {
+    color: #7b88a8;
+  }
+  &-button {
+    cursor: pointer;
+    padding: 13px 30px;
+    border: none;
+    outline: none;
+    background: $color-blue;
+    color: $color-white;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 500;
+    font-family: $font-family-outfit;
+  }
+}

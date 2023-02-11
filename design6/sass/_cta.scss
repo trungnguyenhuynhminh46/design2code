@@ -1,0 +1,41 @@
+.cta {
+  position: relative;
+  &-bg {
+    position: absolute;
+    top: 0;
+    padding: 90px 0;
+    pointer-events: none;
+    user-select: none;
+  }
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 120px 0;
+  }
+  &-header {
+    font-family: $font-family-outfit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: -2px;
+    color: $color-gray;
+    @media screen and (max-width: 767.98px) {
+      font-size: 32px;
+    }
+  }
+  &-subheader {
+    font-family: $font-family-outfit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: $color-light-gray;
+  }
+}

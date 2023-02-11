@@ -1,0 +1,8 @@
+section.story 
+    .container.story-container 
+        .section-header Explore our recent client success stories and witness our full 360 transformations come to life
+        .stories-container 
+            each item in [{src:"./images/Story1.png", href:"/", text:"UX/UI Design"},{src:"./images/Story2.png", href:"/", text:"NFT Market UI"},{src:"./images/Story3.png", href:"/", text:"Health Mobile App"},{src:"./images/Story4.png", href:"/", text:"Wallet App Development"},]
+                .stories-item
+                    img(srcSet= item.src+ ' 2x', alt="").stories-image 
+                    a(href= item.href).stories-url= item.text

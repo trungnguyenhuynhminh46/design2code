@@ -1,0 +1,107 @@
+.hero {
+  position: relative;
+  box-shadow: rgb(0 0 0 / 14%) 0px 7px 5px;
+  &-shape {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    user-select: none;
+  }
+  &-down {
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    background: $color-orange;
+
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+
+    animation: bounce 1s linear infinite alternate;
+  }
+  @keyframes bounce {
+    from {
+      bottom: -10px;
+    }
+    to {
+      bottom: 10px;
+    }
+  }
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 200px;
+    @media screen and (max-width: 819.98px) {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+  &-content {
+    max-width: 770px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  &-header {
+    font-family: $font-family-outfit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 78px;
+    letter-spacing: -2px;
+    color: $color-gray;
+    span {
+      background: linear-gradient(to right, #857fff, #ffc0ec);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    @media screen and (max-width: 767.98px) {
+      font-size: 60px;
+    }
+  }
+  &-text {
+    font-family: $font-family-dmsans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.3px;
+    color: $color-light-gray;
+  }
+  &-functions {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &-how {
+    font-family: $font-family-outfit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+    color: $color-gray;
+  }
+  &-img {
+    width: 100%;
+    max-width: 500px;
+  }
+}

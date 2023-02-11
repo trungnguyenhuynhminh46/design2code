@@ -1,0 +1,25 @@
+.info#info
+    .container
+        .info-container 
+            h1.section-header We design engaging digital products used by millions of people
+            p.section-subheader We team up with marketing departments of large companies and startups to deliver award‑winning websites
+        .cards-container 
+            .cards-item
+                img(src="./images/Rocket.svg", alt="").cards-icon
+                .cards-name Branding
+                .cards-content We design digital platforms to empower users and your brand's tribe.
+            .cards-item
+                img(src="./images/Layers.svg", alt="").cards-icon
+                .cards-name Branding
+                .cards-content We design digital platforms to empower users and your brand's tribe.
+            .cards-item
+                img(src="./images/Chart.svg", alt="").cards-icon
+                .cards-name Branding
+                .cards-content We design digital platforms to empower users and your brand's tribe.
+        div
+            button.btn.info-btn View our services
+        h1.brands-title Working with the most trusted brands in the industry
+        .brands-container
+            each item in [{src:"./images/brand1.svg", name:"Google"}, {src:"./images/brand2.svg", name:"Nextflix"}, {src:"./images/brand3.svg", name:"Slack"}, {src:"./images/brand4.svg", name:"Intercom"}]
+                .brands-item 
+                    img(src= item.src, alt= item.name)

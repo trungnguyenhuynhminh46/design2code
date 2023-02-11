@@ -1,0 +1,20 @@
+.container
+    header.header
+        //- Logo
+        +logo
+        //- Navs
+        .header-menu#menu
+            each item in [{title:'home', href:'/home'}, {title:'services', href:'/services'}, {title:'about', href:'/about'}, {title:'pages', href:'/pages'}, {title:'blog', href:'/blog'}, {title:'contact', href:'/contact'}]
+                .header-menu-item
+                    a(href= item.href).header-menu-link= item.title
+            .header-menu-item 
+                button.btn SIGN UP
+        //- Functions
+        .header-functions
+            a(href="").header-function 
+                img(src="./images/search.svg", alt="")
+            a(href="").header-function
+                img(src="./images/bag.svg", alt="")
+            button(href="").header-function#burger
+                img(src="./images/Burger.svg", alt="")
+            button.btn.sign-up SIGN UP

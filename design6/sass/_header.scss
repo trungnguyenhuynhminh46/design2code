@@ -1,0 +1,93 @@
+.logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  img {
+    width: 32px;
+    height: auto;
+  }
+  span {
+    font-family: $font-family-outfit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: $color-gray;
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  &-menu {
+    button {
+      display: none;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    transition: all 300ms ease-in-out;
+    @media screen and (max-width: 1023.98px) {
+      position: fixed;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 300px;
+      z-index: 20;
+
+      flex-direction: column;
+      background: gray;
+
+      transition: all 0 2s linear;
+      transform: translateX(100%);
+      &.show {
+        transform: translateX(0);
+      }
+      button {
+        display: block;
+      }
+    }
+  }
+
+  &-menu-link {
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all linear 300ms;
+    @media screen and (max-width: 1023.98px) {
+      padding: 10px;
+      color: white;
+    }
+  }
+
+  &-menu-link:hover {
+    color: $color-gray;
+  }
+
+  &-functions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    .sign-up {
+      display: none;
+      @media screen and (min-width: 1024px) {
+        display: block;
+      }
+    }
+  }
+}
+#burger {
+  z-index: 20;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+@media screen and (min-width: 1024px) {
+  #burger {
+    display: none;
+  }
+}
